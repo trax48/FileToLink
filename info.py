@@ -4,7 +4,7 @@ from os import environ
 id_pattern = re.compile(r'^.\d+$')
 
 # Bot information
-SESSION = environ.get('SESSION', 'TechVJBot')
+SESSION = environ.get('SESSION', 'AceFiles')
 API_ID = int(environ.get('API_ID', '23790461'))
 API_HASH = environ.get('API_HASH', '2d0a7fb85f06246e93948bf7afc05fb3')
 BOT_TOKEN = environ.get('BOT_TOKEN', "")
@@ -28,7 +28,7 @@ ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ
 
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Rax:amit7001@cluster0.cintttk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-DATABASE_NAME = environ.get('DATABASE_NAME', "techvjautobot")
+DATABASE_NAME = environ.get('DATABASE_NAME', "Ace_Files")
 
 # Shortlink Info
 SHORTLINK = bool(environ.get('SHORTLINK', False)) # Set True Or False
